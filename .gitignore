@@ -1,1 +1,3 @@
 *.suo
+KenBot/bin/*
+KenBot/obj/*

@@ -13,10 +13,11 @@ namespace Ken
     {
         public const string EntityStockSymbol = "StockSymbol";
 
-        [LuisIntent("")]
+        [LuisIntent("None")]
         public async Task None(IDialogContext context, LuisResult result)
         {
-            string message = $"Sorry I did not understand: " + string.Join(", ", result.Intents.Select(i => i.Intent));
+            //string message = $"Sorry I did not understand: " + string.Join(", ", result.Intents.Select(i => i.Intent));
+            string message = $"Sorry I did not understand - I can do only say Hi";
             await context.PostAsync(message);
             context.Wait(MessageReceived);
         }

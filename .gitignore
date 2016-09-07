@@ -1,3 +1,4 @@
 *.suo
 KenBot/bin/*
 KenBot/obj/*
+.vs/config/applicationhost.config

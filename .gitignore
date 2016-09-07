@@ -1,4 +1,6 @@
 *.suo
 KenBot/bin/*
 KenBot/obj/*
+EikonCiClient/bin/*
+EikonCiClient/obj/*
 .vs/config/applicationhost.config

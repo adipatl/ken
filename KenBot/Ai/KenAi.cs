@@ -21,18 +21,11 @@ namespace Ken
             context.Wait(MessageReceived);
         }
 
-        [LuisIntent("StockPrice")]
+        [LuisIntent("Greeting")]
         public async Task GetStockPrice(IDialogContext context, LuisResult result)
         {
             EntityRecommendation symbol;
-            if (result.TryFindEntity(EntityStockSymbol, out symbol))
-            {
-                await context.PostAsync($"found symbol {symbol.Entity}");
-            }
-            else
-            {
-                await context.PostAsync("did not find symbol");
-            }
+            await context.PostAsync($"Hi There");
             context.Wait(MessageReceived);
         }
     }
